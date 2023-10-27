@@ -1,0 +1,288 @@
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+.featured-products {
+    text-align: center;
+}
+
+.product {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    width: 20%;
+    transition: transform 0.3s; 
+    
+}
+.product:hover {
+    transform: scale(1.13); /* Zoom out to 95% of the original size */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    width: 70%;
+    
+}
+
+.price {
+    font-weight: bold;
+    color: #007bff;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.rating {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #FFD700; /* Set the star color (here, it's gold) */
+}
+
+.star {
+    display: inline-block;
+    padding: 0 2px;
+}
+/* Define a class for the product description */
+.description {
+    font-size: 14px; /* Set the desired font size */
+    color: #333; /* Set the text color */
+    margin: 10px 0; /* Add spacing around the description */
+    text-align: left; /* Set the text alignment (left, center, right) */
+    max-width: 500px; /* Set a maximum width for the description */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Style for the pagination container */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style for pagination buttons */
+.pagination a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 3px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 3px;
+}
+
+/* Style for the current page button */
+.pagination .page.current {
+    background-color: #333;
+}
+
+/* Style for Prev and Next buttons */
+.pagination .prev, .pagination .next {
+    background-color: #333;
+}
+
+/* Style for Prev and Next button text */
+.pagination .prev::before, .pagination .next::after {
+    content: "←"; /* Left arrow for "Prev" and right arrow for "Next" */
+    margin-right: 5px;
+}
+/* Style for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for the footer text */
+footer p {
+    margin: 0;
+}
+/* Reset default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Set background color and font styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make the body at least 100% of the viewport height */
+}
+
+/* Style for the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for the navigation menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style for the main content */
+main {
+    padding: 20px;
+    flex: 1; /* Expand to fill available space */
+}
+
+/* Style for the "About Us" section */
+.about {
+    text-align: center;
+}
+
+/* Style for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.contact {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* ... Your existing CSS code ... */
+
+/* Style for the search form */
+.search {
+    display: flex;
+    margin-top: 20px;
+}
+
+.search input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.search button {
+    background-color: rgb(7, 85, 253);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+}
+
+/* CSS for styling the pagination buttons */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: rgb(50, 53, 255);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* CSS for styling the product list */
+.product-list {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.product-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-list li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    background-color: #fff;
+}
+
